@@ -1,0 +1,856 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="style.css" rel="stylesheet" />
+  <!-- documentation styles -->
+    <link href="CSS/foundation-icons/foundation-icons.css" rel="stylesheet" /><link href="CSS/component.css" rel="stylesheet" /><link href="jquery.mCustomScrollbar.css" rel="stylesheet" /><link href="StyleSheet.css" rel="stylesheet" /><title>
+	Staff
+</title><link href="/Faculty/WebResource.axd?d=u2o1_f30UOFNK234RPCMz9UrfukMVXK0hxjnRCsRl6-hSZh3GTqt_GvkWlqqMISoivy6B4HbZDlA_whkbNmgv9wNk6lOCloX90exCad-iwJiBHcT4ptrTWs_1x_A99qlW85ZjuzrVHjNPw8E3T4gSg2&amp;t=634745905060000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Faculty/WebResource.axd?d=0_itV3wGcx0dp6uej2UYWxmY8CJn30YZAeMWoFXyI0Ti5wha_tprJO-pF2LK50D8B6hgDqiGfOAIa6kWZcvmIaMwNLcMvqxqzZJHUSjSlsNL-V_2MbMYB6Sdnik5ee4qKib3YEpe7zC4Uxz2GqNVdZxslCS0QUW0osW8GgltN3tEVDywmFDuCiBhheyvrHc00&amp;t=634745905060000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Faculty/WebResource.axd?d=eH0912_fx81YILzSvixzS7pyty9OkBU4vqr5Zt7PzcqYCW-2R8PI-yRDDnjlJTQG5oSguJOh-Ux9uS6N3J-TV6wQnFJMT6xAI_qtAna2ydLTpJZxPQq_gnC9KFz-N1NXiXevh-tFh5RkBe_1KJhW6Q2&amp;t=634745905060000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Faculty/WebResource.axd?d=vvelo2bqJYlKq_mvXtq2N1UGTMe5O5cu9J91wCbw3C8d0iQ2gCVhOruG21FNDDSsWtgn6LSK1DB1vZ5ka_ordcMA48cohdDOt232tkCQ8voNWibM3YY_76bAh1vO4IFFOZoOmzTx1Z5X6an7Txw1OeRkzfi0T3zK21sxMyDPdusOG_A9GhIwuSrFoz7SSzof0&amp;t=634745905060000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Faculty/WebResource.axd?d=2czM-WIO_34Jz2wJDnlvbz2hZX3clXlervOWRER5UIBASa8Gj-nM_J5C7EgCf0LVZAykXX4D3SYFL7OA-v-c5NBaEGCkqDbIKHfqReS4IvRiUw-wzOWnfbAcMQSa_WTRDYnyqLX4XUoyhvwvjQmsZg2&amp;t=634745905060000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Faculty/WebResource.axd?d=sg00bIUGxPSI6FGDKWhvrokB_hYsGl_YdnQzv5uKTg66-KVsMVZpZfglxpyFm72GIFDtg3AfaUKaY7EpHbqNdvrUYAW-IzYXMDhLcujcT5o44oHYa94OCVW2XGWAAoroCtYREsshAjLh7_y5qqrf3ba1_kcdou7MwBRrHkhdGpk1&amp;t=634745905060000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Staff.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_RadScriptManager1_TSM" id="ctl00_RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA2MDA2Mzc4MA9kFgJmD2QWAgIDD2QWAgIHD2QWBAIBD2QWAgIBDzwrAA4CABQrAAIPFgYeC18hRGF0YUJvdW5kZx4XRW5hYmxlQWpheFNraW5SZW5kZXJpbmdoHgtfIUl0ZW1Db3VudAIBZBcDBQtFZGl0SW5kZXhlcxYABQ9TZWxlY3RlZEluZGV4ZXMWAAUIUGFnZVNpemUCDwEWAhYKDwICFCsAAhQrAAUWAh4IRGF0YVR5cGUZKwJkZGQFC0Rlc2lnbmF0aW9uFCsABRYCHwMZKwJkZGQFBE5hbWVkZRQrAAALKXlUZWxlcmlrLldlYi5VSS5HcmlkQ2hpbGRMb2FkTW9kZSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxMi4yLjYwNy40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0ATwrAAcACyl0VGVsZXJpay5XZWIuVUkuR3JpZEVkaXRNb2RlLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDEyLjIuNjA3LjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQBFgIeBF9lZnMWAh4EX2VjY2RkFhAeCERhdGFLZXlzFgAfAGceFElzQm91bmRUb0ZvcndhcmRPbmx5aB4OQ3VzdG9tUGFnZVNpemUCDx8CAg8eBV9xZWx0GSlnU3lzdGVtLkRhdGEuRGF0YVJvd1ZpZXcsIFN5c3RlbS5EYXRhLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OR4EX2Fjc2ceBV8hQ0lTFwBmFgRmDxQrAANkZGRkAgEPFgQUKwACDxYQHwYWAB8AZx8HaB8IAg8fAgIPHwkZKwYfCmcfCxcAZBcEBQtfIUl0ZW1Db3VudAIPBQhfIVBDb3VudAKOAQUQQ3VycmVudFBhZ2VJbmRleGYFBl8hRFNJQwLOEBYCHgNfc2UWAh4CX2NmFCsADxQrAAIUKwABBQZDYW1wSWQUKwABKClZU3lzdGVtLkludDY0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkBNhQrAAIUKwABBQZDYW1wSWQUKwABKCsHATYUKwACFCsAAQUGQ2FtcElkFCsAASgrBwE2FCsAAhQrAAEFBkNhbXBJZBQrAAEoKwcBNhQrAAIUKwABBQZDYW1wSWQUKwABKCsHATYUKwACFCsAAQUGQ2FtcElkFCsAASgrBwE2FCsAAhQrAAEFBkNhbXBJZBQrAAEoKwcBNhQrAAIUKwABBQZDYW1wSWQUKwABKCsHATYUKwACFCsAAQUGQ2FtcElkFCsAASgrBwE2FCsAAhQrAAEFBkNhbXBJZBQrAAEoKwcBNhQrAAIUKwABBQZDYW1wSWQUKwABKCsHATYUKwACFCsAAQUGQ2FtcElkFCsAASgrBwE2FCsAAhQrAAEFBkNhbXBJZBQrAAEoKwcBNhQrAAIUKwABBQZDYW1wSWQUKwABKCsHATYUKwACFCsAAQUGQ2FtcElkFCsAASgrBwE2FgJkZBYCZg9kFkBmD2QWBGYPDxYCHgdWaXNpYmxlaGQWAmYPDxYCHgpDb2x1bW5TcGFuAgJkFgJmD2QWAmYPZBYCZg9kFgQCAQ9kFgJmDw8WBB4IQ3NzQ2xhc3MFDXJnQ3VycmVudFBhZ2UeBF8hU0ICAmRkAgMPDxYEHxAFEHJnV3JhcCByZ0FkdlBhcnQfEQICZBYCAgEPFCsAAg8WEh4TRW5hYmxlRW1iZWRkZWRTa2luc2ceGVJlZ2lzdGVyV2l0aFNjcmlwdE1hbmFnZXJnHhVFbmFibGVFbWJlZGRlZFNjcmlwdHNnHxECgAIeE2NhY2hlZFNlbGVjdGVkVmFsdWVkHgVXaWR0aBsAAAAAAABPQAEAAAAeHEVuYWJsZUVtYmVkZGVkQmFzZVN0eWxlc2hlZXRnHwBnHhxPbkNsaWVudFNlbGVjdGVkSW5kZXhDaGFuZ2VkBS5UZWxlcmlrLldlYi5VSS5HcmlkLkNoYW5nZVBhZ2VTaXplQ29tYm9IYW5kbGVyZA8UKwAEFCsAAg8WBh4EVGV4dAUCMTAeBVZhbHVlBQIxMB4IU2VsZWN0ZWRoFgIeEG93bmVyVGFibGVWaWV3SWQFKGN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfUmFkR3JpZDFfY3RsMDBkFCsAAg8WBh8ZBQIxNR8aBQIxNR8bZxYCHxwFKGN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfUmFkR3JpZDFfY3RsMDBkFCsAAg8WBh8ZBQIyMB8aBQIyMB8baBYCHxwFKGN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfUmFkR3JpZDFfY3RsMDBkFCsAAg8WBh8ZBQI1MB8aBQI1MB8baBYCHxwFKGN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfUmFkR3JpZDFfY3RsMDBkDxQrAQRmZmZmFgEFd1RlbGVyaWsuV2ViLlVJLlJhZENvbWJvQm94SXRlbSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxMi4yLjYwNy40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0FgxmDw8WBB8QBQlyY2JIZWFkZXIfEQICZGQCAQ8PFgQfEAUJcmNiRm9vdGVyHxECAmRkAgIPDxYGHxkFAjEwHxoFAjEwHxtoFgIfHAUoY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9SYWRHcmlkMV9jdGwwMGQCAw8PFgYfGQUCMTUfGgUCMTUfG2cWAh8cBShjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX1JhZEdyaWQxX2N0bDAwZAIEDw8WBh8ZBQIyMB8aBQIyMB8baBYCHxwFKGN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfUmFkR3JpZDFfY3RsMDBkAgUPDxYGHxkFAjUwHxoFAjUwHxtoFgIfHAUoY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9SYWRHcmlkMV9jdGwwMGQCAQ9kFgRmDw8WBB8ZBQYmbmJzcDsfDmhkZAIBDw8WBB8ZBQYmbmJzcDsfDmhkZAIBD2QWBGYPZBYIZg8PFgQfGQUGJm5ic3A7Hw5oZGQCAQ8PFgQfGQUGJm5ic3A7Hw5oZGQCAg8PFgIfGQUGJm5ic3A7ZGQCAw8PFgIfGQUGJm5ic3A7ZGQCAQ9kFgJmDw8WAh8PAgJkFgJmD2QWAmYPZBYCZg9kFgQCAQ9kFgJmDw8WBB8QBQ1yZ0N1cnJlbnRQYWdlHxECAmRkAgMPDxYEHxAFEHJnV3JhcCByZ0FkdlBhcnQfEQICZBYCAgEPFCsAAg8WGB8SZx8TZx8UZx8ZBQIxNR8RAoACHxVkHwFoHxYbAAAAAAAAT0ABAAAAHxdnHwBnHgRTa2luBQpNZXRyb1RvdWNoHxgFLlRlbGVyaWsuV2ViLlVJLkdyaWQuQ2hhbmdlUGFnZVNpemVDb21ib0hhbmRsZXJkDxQrAAQUKwACDxYGHxkFAjEwHxoFAjEwHxtoFgIfHAUoY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9SYWRHcmlkMV9jdGwwMGQUKwACDxYGHxkFAjE1HxoFAjE1HxtnFgIfHAUoY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9SYWRHcmlkMV9jdGwwMGQUKwACDxYGHxkFAjIwHxoFAjIwHxtoFgIfHAUoY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9SYWRHcmlkMV9jdGwwMGQUKwACDxYGHxkFAjUwHxoFAjUwHxtoFgIfHAUoY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9SYWRHcmlkMV9jdGwwMGQPFCsBBGZmZmYWAQV3VGVsZXJpay5XZWIuVUkuUmFkQ29tYm9Cb3hJdGVtLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDEyLjIuNjA3LjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQWDGYPDxYEHxAFCXJjYkhlYWRlch8RAgJkZAIBDw8WBB8QBQlyY2JGb290ZXIfEQICZGQCAg8PFgYfGQUCMTAfGgUCMTAfG2gWAh8cBShjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX1JhZEdyaWQxX2N0bDAwZAIDDw8WBh8ZBQIxNR8aBQIxNR8bZxYCHxwFKGN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfUmFkR3JpZDFfY3RsMDBkAgQPDxYGHxkFAjIwHxoFAjIwHxtoFgIfHAUoY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9SYWRHcmlkMV9jdGwwMGQCBQ8PFgYfGQUCNTAfGgUCNTAfG2gWAh8cBShjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX1JhZEdyaWQxX2N0bDAwZAICDw8WAh4EX2lpaAUBMGQWCGYPDxYCHw5oZGQCAQ8PFgQfGQUGJm5ic3A7Hw5oZGQCAg8PFgIfGWVkFgQCAQ8PFgIeCEltYWdlVXJsBR5+XERlZmF1bHRVc2VySW1hZ2Vcbm9pbWFnZS5qcGdkZAIDDw8WAh4LTmF2aWdhdGVVcmwFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2OWRkAgMPDxYCHxllZBYMAgEPDxYEHxkFCVdhcWFzIEFsaR8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjlkZAIDDw8WAh8ZBQpCdXMgSGVscGVyZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NjlkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjlkZAIDD2QWAmYPDxYCHw5oZGQCBA8PFgIfHgUBMWQWCGYPDxYCHw5oZGQCAQ8PFgQfGQUGJm5ic3A7Hw5oZGQCAg8PFgIfGWVkFgQCAQ8PFgIfHwUeflxEZWZhdWx0VXNlckltYWdlXG5vaW1hZ2UuanBnZGQCAw8PFgIfIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjY4ZGQCAw8PFgIfGWVkFgwCAQ8PFgQfGQUKQXNnaGFyIEFsaR8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjhkZAIDDw8WAh8ZBQpCdXMgSGVscGVyZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NjhkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjhkZAIFD2QWAmYPDxYCHw5oZGQCBg8PFgIfHgUBMmQWCGYPDxYCHw5oZGQCAQ8PFgQfGQUGJm5ic3A7Hw5oZGQCAg8PFgIfGWVkFgQCAQ8PFgIfHwUeflxEZWZhdWx0VXNlckltYWdlXG5vaW1hZ2UuanBnZGQCAw8PFgIfIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjY3ZGQCAw8PFgIfGWVkFgwCAQ8PFgQfGQUNU2FqaWQgTWVobW9vZB8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjdkZAIDDw8WAh8ZBQpCdXMgSGVscGVyZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NjdkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjdkZAIHD2QWAmYPDxYCHw5oZGQCCA8PFgIfHgUBM2QWCGYPDxYCHw5oZGQCAQ8PFgQfGQUGJm5ic3A7Hw5oZGQCAg8PFgIfGWVkFgQCAQ8PFgIfHwUeflxEZWZhdWx0VXNlckltYWdlXG5vaW1hZ2UuanBnZGQCAw8PFgIfIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjY2ZGQCAw8PFgIfGWVkFgwCAQ8PFgQfGQUMUmFuYSBNIHNhamlkHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2NmRkAgMPDxYCHxkFCkJ1cyBIZWxwZXJkZAIFDw8WAh8ZBRBUcmFuc3BvcnQgT2ZmaWNlZGQCBw8PFgIfGQUHU2FoaXdhbGRkAgkPDxYCHyAFNmh0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvY29udGFjdC9kZWZhdWx0LmFzcHg/RD0zMDY2NmRkAgsPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2NmRkAgkPZBYCZg8PFgIfDmhkZAIKDw8WAh8eBQE0ZBYIZg8PFgIfDmhkZAIBDw8WBB8ZBQYmbmJzcDsfDmhkZAICDw8WAh8ZZWQWBAIBDw8WAh8fBR5+XERlZmF1bHRVc2VySW1hZ2Vcbm9pbWFnZS5qcGdkZAIDDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjVkZAIDDw8WAh8ZZWQWDAIBDw8WBB8ZBQpNIEFsaSBJamF6HyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2NWRkAgMPDxYCHxkFCkJ1cyBIZWxwZXJkZAIFDw8WAh8ZBRBUcmFuc3BvcnQgT2ZmaWNlZGQCBw8PFgIfGQUHU2FoaXdhbGRkAgkPDxYCHyAFNmh0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvY29udGFjdC9kZWZhdWx0LmFzcHg/RD0zMDY2NWRkAgsPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2NWRkAgsPZBYCZg8PFgIfDmhkZAIMDw8WAh8eBQE1ZBYIZg8PFgIfDmhkZAIBDw8WBB8ZBQYmbmJzcDsfDmhkZAICDw8WAh8ZZWQWBAIBDw8WAh8fBR5+XERlZmF1bHRVc2VySW1hZ2Vcbm9pbWFnZS5qcGdkZAIDDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjRkZAIDDw8WAh8ZZWQWDAIBDw8WBB8ZBQlBYmJhZCBBbGkfIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjY0ZGQCAw8PFgIfGQUKQnVzIEhlbHBlcmRkAgUPDxYCHxkFEFRyYW5zcG9ydCBPZmZpY2VkZAIHDw8WAh8ZBQdTYWhpd2FsZGQCCQ8PFgIfIAU2aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9jb250YWN0L2RlZmF1bHQuYXNweD9EPTMwNjY0ZGQCCw8PFgIfIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjY0ZGQCDQ9kFgJmDw8WAh8OaGRkAg4PDxYCHx4FATZkFghmDw8WAh8OaGRkAgEPDxYEHxkFBiZuYnNwOx8OaGRkAgIPDxYCHxllZBYEAgEPDxYCHx8FHn5cRGVmYXVsdFVzZXJJbWFnZVxub2ltYWdlLmpwZ2RkAgMPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2M2RkAgMPDxYCHxllZBYMAgEPDxYEHxkFC1NhamlkIExhdGlmHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2M2RkAgMPDxYCHxkFCkJ1cyBIZWxwZXJkZAIFDw8WAh8ZBRBUcmFuc3BvcnQgT2ZmaWNlZGQCBw8PFgIfGQUHU2FoaXdhbGRkAgkPDxYCHyAFNmh0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvY29udGFjdC9kZWZhdWx0LmFzcHg/RD0zMDY2M2RkAgsPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2M2RkAg8PZBYCZg8PFgIfDmhkZAIQDw8WAh8eBQE3ZBYIZg8PFgIfDmhkZAIBDw8WBB8ZBQYmbmJzcDsfDmhkZAICDw8WAh8ZZWQWBAIBDw8WAh8fBR5+XERlZmF1bHRVc2VySW1hZ2Vcbm9pbWFnZS5qcGdkZAIDDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjJkZAIDDw8WAh8ZZWQWDAIBDw8WBB8ZBQxTaGFoaWQgSW1yYW4fIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjYyZGQCAw8PFgIfGQUKQnVzIEhlbHBlcmRkAgUPDxYCHxkFEFRyYW5zcG9ydCBPZmZpY2VkZAIHDw8WAh8ZBQdTYWhpd2FsZGQCCQ8PFgIfIAU2aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9jb250YWN0L2RlZmF1bHQuYXNweD9EPTMwNjYyZGQCCw8PFgIfIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjYyZGQCEQ9kFgJmDw8WAh8OaGRkAhIPDxYCHx4FAThkFghmDw8WAh8OaGRkAgEPDxYEHxkFBiZuYnNwOx8OaGRkAgIPDxYCHxllZBYEAgEPDxYCHx8FHn5cRGVmYXVsdFVzZXJJbWFnZVxub2ltYWdlLmpwZ2RkAgMPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY2MWRkAgMPDxYCHxllZBYMAgEPDxYEHxkFDFphaGVlciBBYmJhcx8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjFkZAIDDw8WAh8ZBQpCdXMgSGVscGVyZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NjFkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjFkZAITD2QWAmYPDxYCHw5oZGQCFA8PFgIfHgUBOWQWCGYPDxYCHw5oZGQCAQ8PFgQfGQUGJm5ic3A7Hw5oZGQCAg8PFgIfGWVkFgQCAQ8PFgIfHwUeflxEZWZhdWx0VXNlckltYWdlXG5vaW1hZ2UuanBnZGQCAw8PFgIfIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjYwZGQCAw8PFgIfGWVkFgwCAQ8PFgQfGQUHTSBVc21hbh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjBkZAIDDw8WAh8ZBQpCdXMgSGVscGVyZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NjBkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NjBkZAIVD2QWAmYPDxYCHw5oZGQCFg8PFgIfHgUCMTBkFghmDw8WAh8OaGRkAgEPDxYEHxkFBiZuYnNwOx8OaGRkAgIPDxYCHxllZBYEAgEPDxYCHx8FHn5cRGVmYXVsdFVzZXJJbWFnZVxub2ltYWdlLmpwZ2RkAgMPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY1OWRkAgMPDxYCHxllZBYMAgEPDxYEHxkFDFdhaGVlZCBBaG1hZB8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NTlkZAIDDw8WAh8ZBQpCdXMgSGVscGVyZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NTlkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NTlkZAIXD2QWAmYPDxYCHw5oZGQCGA8PFgIfHgUCMTFkFghmDw8WAh8OaGRkAgEPDxYEHxkFBiZuYnNwOx8OaGRkAgIPDxYCHxllZBYEAgEPDxYCHx8FHn5cRGVmYXVsdFVzZXJJbWFnZVxub2ltYWdlLmpwZ2RkAgMPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY1OGRkAgMPDxYCHxllZBYMAgEPDxYEHxkFDEZpYXogTWVobW9vZB8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NThkZAIDDw8WAh8ZBQpCdXMgSGVscGVyZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NThkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NThkZAIZD2QWAmYPDxYCHw5oZGQCGg8PFgIfHgUCMTJkFghmDw8WAh8OaGRkAgEPDxYEHxkFBiZuYnNwOx8OaGRkAgIPDxYCHxllZBYEAgEPDxYCHx8FHn5cRGVmYXVsdFVzZXJJbWFnZVxub2ltYWdlLmpwZ2RkAgMPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY1N2RkAgMPDxYCHxllZBYMAgEPDxYEHxkFDElmdGVraGFyIEFsaR8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NTdkZAIDDw8WAh8ZBQpCdXMgSGVscGVyZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NTdkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NTdkZAIbD2QWAmYPDxYCHw5oZGQCHA8PFgIfHgUCMTNkFghmDw8WAh8OaGRkAgEPDxYEHxkFBiZuYnNwOx8OaGRkAgIPDxYCHxllZBYEAgEPDxYCHx8FHn5cRGVmYXVsdFVzZXJJbWFnZVxub2ltYWdlLmpwZ2RkAgMPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY1NmRkAgMPDxYCHxllZBYMAgEPDxYEHxkFCE0gVGF5eWFiHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY1NmRkAgMPDxYCHxkFCkJ1cyBIZWxwZXJkZAIFDw8WAh8ZBRBUcmFuc3BvcnQgT2ZmaWNlZGQCBw8PFgIfGQUHU2FoaXdhbGRkAgkPDxYCHyAFNmh0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvY29udGFjdC9kZWZhdWx0LmFzcHg/RD0zMDY1NmRkAgsPDxYCHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY1NmRkAh0PZBYCZg8PFgIfDmhkZAIeDw8WAh8eBQIxNGQWCGYPDxYCHw5oZGQCAQ8PFgQfGQUGJm5ic3A7Hw5oZGQCAg8PFgIfGWVkFgQCAQ8PFgIfHwUeflxEZWZhdWx0VXNlckltYWdlXG5vaW1hZ2UuanBnZGQCAw8PFgIfIAU/aHR0cDovL3d3My5jb21zYXRzLmVkdS5way9mYWN1bHR5L0ZhY3VsdHlEZXRhaWxzLmFzcHg/VWlkPTMwNjU1ZGQCAw8PFgIfGWVkFgwCAQ8PFgQfGQUMU2hhaGlkIGxhdGlmHyAFP2h0dHA6Ly93dzMuY29tc2F0cy5lZHUucGsvZmFjdWx0eS9GYWN1bHR5RGV0YWlscy5hc3B4P1VpZD0zMDY1NWRkAgMPDxYCHxkFCE1lY2hhbmljZGQCBQ8PFgIfGQUQVHJhbnNwb3J0IE9mZmljZWRkAgcPDxYCHxkFB1NhaGl3YWxkZAIJDw8WAh8gBTZodHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2NvbnRhY3QvZGVmYXVsdC5hc3B4P0Q9MzA2NTVkZAILDw8WAh8gBT9odHRwOi8vd3czLmNvbXNhdHMuZWR1LnBrL2ZhY3VsdHkvRmFjdWx0eURldGFpbHMuYXNweD9VaWQ9MzA2NTVkZAIfD2QWAmYPDxYCHw5oZGQCAw8PFgIfAWhkZBgDBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUiY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRSYWRHcmlkMQVFY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRSYWRHcmlkMSRjdGwwMCRjdGwwMyRjdGwwMSRQYWdlU2l6ZUNvbWJvQm94BUVjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJFJhZEdyaWQxJGN0bDAwJGN0bDAzJGN0bDAxJFBhZ2VTaXplQ29tYm9Cb3gPFCsAAgUCMTUFAjE1ZAVFY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRSYWRHcmlkMSRjdGwwMCRjdGwwMiRjdGwwMCRQYWdlU2l6ZUNvbWJvQm94DxQrAAJlBQIxNWSrJysHrPyRyDtbDOXABzZbs+abf5db+Vhtq7fxZ8RSxA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/Faculty/WebResource.axd?d=k8CMQBhbdSYpd9wrLwH6p9mXw9TfL3YzN5VkAxqWjRSM7JdLld9oUiEKdUNidAD37OYbLB-jd-bp4T118PhubWxiZsoBbM3OQkwpiMsK2941&amp;t=636065365469690049" type="text/javascript"></script>
+
+
+<script src="/Faculty/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a4d4da635-3815-4b70-912b-f389ade5df37%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%3aen-US%3a08ccafd1-fc13-48c0-b85b-a439ce2f6884%3a16e4e7cd%3aed16cbdc%3a58366029%3af7645509%3a24ee1bba%3af46195d3%3a2003d0b8%3a1e771326%3aaa288e2d" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="84B2D0D2" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABIAZp22PjlJ0KKR4npqdPHNZwcDCO29qFFCsBc+67e0JNLkjSARjg4RS0K6zAHpUJ0tRPSxGIqR2jBgHyTvHrZ4JHpw0qgsitcrUvISV0JxY37Z9OKEApmwEY7CRcguoHr4LGZpD8jOuNQTWNYoQRHgBbSzbMYvadaj/jQ4MC5vWyca6oIZH3aqIcoKTzGgcmvHv/WBYVW2Ktkae5xp9ii7QZ2SOR4FDuorUiBj5goAVz7G7EJmA4Ir/8k/cAewUm6Daeog5vIGc/3XUZ/DXvESlB0JtTM47rAwDz1v3eaA+LR11yUwN63UMQ6FdUHntwhE4o7hTnQBPAU7bHkbadmoakW8itPJwyzHUD2E4xcANdwE+fzDdMAwqLiZgNdHnI9pe9zYoiXpEpslAJRicKa1dO5ciZBtB/jI4Jpui0lGAw==" />
+</div>
+         <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$RadScriptManager1', 'aspnetForm', ['tctl00$ContentPlaceHolder1$ctl00$ContentPlaceHolder1$ctl00Panel',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+ <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
+                <nav class="tab-bar" style="background:#eee">
+                    <div class="row">
+            <div class="small-12 medium-3 large-3 columns small-only-text-center">
+                 <a class="button tiny secondary"  href="https://www.facebook.com/pages/Comsats-Institute-of-Information-Technology-Islamabad-Campus-Official/212244615476041" target="_blank"><i class="fi-social-facebook size-18"></i></a>
+                 <a class="button tiny secondary" href="https://twitter.com/#!/ciitislamabad" target="_blank"><i class="fi-social-twitter size-18"></i></a>
+                 <a class="button tiny secondary" href="http://ww3.comsats.edu.pk/ciitblogs" target="_blank"><i class=" fi-social-blogger size-18"></i></a>
+                 <a class="button tiny secondary" href="http://ww3.comsats.edu.pk/photogallery" target="_blank"><i class="fi-photo size-18"></i></a>
+
+</div>
+    <div class="small-12 medium-9 large-9 columns"  style="color:#eee">
+        
+        <div class="right">
+                  
+                 <a class="button tiny secondary" href="http://ww2.comsats.edu.pk/faculty/forgotpassword.aspx" >Forgot Password</a>
+                  <a class="button tiny secondary" href="RegistrationPolicy.aspx" >Sign Up</a>
+                    
+            <a class="button tiny secondary" href="Home/signinwithemail.aspx" >Sign In with Email</a>
+            <a class="button tiny secondary" href="Home/signin.aspx" >Sign In with Username</a>
+          
+    </div></div>
+</div>
+                </nav>
+ </div></div>
+     
+ <div class="row" >
+                <img src="images/fac_bg.jpg" class=" small-12 medium-5 large-5 columns left" style="margin-top:-0.5rem;" />
+ <div class="small-12 medium-7 large-7 columns small-only-text-center">
+ <div class="right">        
+  <a class="item button tiny" href="Default.aspx" style="width:9em;"><i class="fi-home size-21"></i><label style="color:#fff">Home</label></a>
+  <a class="item button tiny success" href="ContactUs.aspx" style="width:9em;" ><i class="fi-telephone size-21"></i><label style="color:#fff">Contact</label></a>
+ 
+  
+  <a class="item button tiny alert" style="width:9em;" href="http://ww3.comsats.edu.pk/feedback/default.aspx?Project=Faculty/Staff Portal" target="_blank"><i class= "fi-comments size-21"></i> <label style="color:#fff">Feedback</label></a>
+</div>
+</div>
+              
+ </div>
+   
+        
+<div class="contain-to-grid" style="background:#4390DF">
+             <div class="sticky">
+
+      <nav class="top-bar" data-topbar data-options="sticky_on: large" role="navigation" style="background:#4390DF;">
+                <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"> </a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+        <section class="top-bar-section">
+            <ul class="left" >
+     <li class="current"><a href="Default.aspx">Home</a></li>
+                
+                <li class="current"><a href="FacultyAtoZ.aspx">A to Z Faculty</a></li>
+                <li class="current"><a href="faculty.aspx">Faculty</a></li>
+                <li class="current"><a href="FacultyAtoZ.aspx">A to Z Staff</a></li>
+    <li class="current"><a href="Staff.aspx">Staff</a></li>
+                <li class="current"><a href="BrowseByCampus.aspx">Browse By Campus</a></li>
+    <li class="current"><a href="RegistrationPolicy.aspx">Registration</a></li>
+
+                  <li class="current"><a href="SearchByName.aspx">Search Faculty/Staff</a></li>
+                
+    
+             
+      
+    
+    
+    
+
+                        </ul>
+            </section>
+                </nav>   
+      </div></div>
+              
+       
+       <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
+            <div class="row" style="padding-top:2rem;">
+                <div class="small-12 medium-3 large-3 columns">
+                    <h2>Quick Links</h2>
+                    <a href="http://comsats.edu.pk" target="_blank" class="button expand small">CUI Main Website</a>
+                    <a href="http://ww3.comsats.edu.pk/Research" target="_blank" class="button expand secondary small">Research Portal</a>
+                    <a href="http://ww3.comsats.edu.pk/Scholarships" target="_blank" class="button expand small">Scholarships Portal</a>
+                    <a href="http://ww3.comsats.edu.pk/photogallery/" target="_blank" class="button expand secondary small">Photo Gallery</a>
+
+                    <a href="http://ww3.comsats.edu.pk/ciitblogs" target="_blank" class="button expand small">CUI Blogs</a>
+                    
+                    <a href="http://ww2.comsats.edu.pk/cdc" target="_blank" class="button expand secondary small">CUI Job Portal</a>
+
+                    
+                    <a href="http://ww3.comsats.edu.pk/journals" target="_blank" class="button expand  small">Open Access Journals</a>
+                    <a href="http://ww3.comsats.edu.pk/thesis" target="_blank" class="button expand secondary small">CUI Thesis Repository</a>
+                    <a href="http://ww3.comsats.edu.pk/Conferences" target="_blank" class="button expand  small">CUI Conference & Workshops</a>
+                    <a href="http://ww3.comsats.edu.pk/uc" target="_blank" class="button expand  secondary small">CUI Union Catalogue</a>
+                </div>
+                <div class="small-12 medium-9 large-9 columns">
+                
+    
+   <div style="float:left; width:59%; text-align:left; border-width:0;  border-color:white; border-style:none;" ><a ><h1>Latest Staff Profiles</h1> </a></div>
+    <div style="float:left; width:40%; text-align:right; border-width:0; border-color:white; border-style:none;" ><a class="item button tiny success" href="SearchByName.aspx" style="width:14em;" data-reveal-id="contactModal"><label style="color:#fff">Search Staff</label></a></div>
+    
+    <div style="float:left; border-color:white; border-width:0; width:100%;">
+        <div id="ctl00_ContentPlaceHolder1_ctl00_ContentPlaceHolder1_ctl00Panel">
+	<div id="ctl00_ContentPlaceHolder1_ctl00">
+		<!-- 2012.2.607.40 -->
+            <p>These profiles are shown in descending order by profile creation date.</p>
+
+      <div id="ctl00_ContentPlaceHolder1_RadGrid1" class="RadGrid RadGrid_MetroTouch" style="width:100%;">
+
+		<table class="rgMasterTable" border="0" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+	<colgroup>
+		<col  />
+		<col  />
+	</colgroup>
+<thead>
+		<tr>
+			<th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl02$ctl01$ctl00&#39;,&#39;&#39;)">Profiles</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl02$ctl01$ctl01&#39;,&#39;&#39;)">Faculty / Staff Members</a></th>
+		</tr>
+	</thead><tfoot>
+		<tr class="rgFooter">
+			<td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr class="rgPager">
+			<td colspan="2"><table border="0" style="width:100%;border-spacing:0;">
+				<tr>
+					<td class="rgPagerCell NextPrevAndNumeric"><div class="rgWrap rgArrPart1">
+						<input type="submit" name="ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl02" value=" " onclick="return false;" title="First Page" class="rgPageFirst" /> <input type="submit" name="ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl03" value=" " onclick="return false;" title="Previous Page" class="rgPagePrev" />
+					</div><div class="rgWrap rgNumPart">
+						<a onclick="return false;" class="rgCurrentPage" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl05&#39;,&#39;&#39;)"><span>1</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl07&#39;,&#39;&#39;)"><span>2</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl09&#39;,&#39;&#39;)"><span>3</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl11&#39;,&#39;&#39;)"><span>4</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl13&#39;,&#39;&#39;)"><span>5</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl15&#39;,&#39;&#39;)"><span>6</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl17&#39;,&#39;&#39;)"><span>7</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl19&#39;,&#39;&#39;)"><span>8</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl21&#39;,&#39;&#39;)"><span>9</span></a><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl23&#39;,&#39;&#39;)"><span>10</span></a><a title="Next Pages" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl25&#39;,&#39;&#39;)"><span>...</span></a>
+					</div><div class="rgWrap rgArrPart2">
+						<input type="submit" name="ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl28" value=" " title="Next Page" class="rgPageNext" /> <input type="submit" name="ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$ctl29" value=" " title="Last Page" class="rgPageLast" />
+					</div><div class="rgWrap rgAdvPart">
+						<span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeLabel" class="rgPagerLabel">Page size:</span><div id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_PageSizeComboBox" class="RadComboBox RadComboBox_MetroTouch" style="width:62px;white-space:normal;">
+							<table summary="combobox" style="border-width:0;border-collapse:collapse;width:100%">
+								<tr class="rcbReadOnly">
+									<td style="width:100%;" class="rcbInputCell rcbInputCellLeft"><input name="ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$PageSizeComboBox" type="text" class="rcbInput" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_PageSizeComboBox_Input" value="15" readonly="readonly" /></td>
+									<td class="rcbArrowCell rcbArrowCellRight"><a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_PageSizeComboBox_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+								</tr>
+							</table>
+							<div class="rcbSlide" style="z-index:6000;"><div id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_PageSizeComboBox_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_MetroTouch " style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem ">10</li><li class="rcbItem ">15</li><li class="rcbItem ">20</li><li class="rcbItem ">50</li></ul></div></div></div><input id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_PageSizeComboBox_ClientState" name="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_PageSizeComboBox_ClientState" type="hidden" />
+						</div>
+					</div><div class="rgWrap rgInfoPart">
+						 &nbsp;<strong>2126</strong> items in <strong>142</strong> pages
+					</div></td>
+				</tr>
+			</table></td>
+		</tr>
+	</tfoot><tbody>
+	<tr class="rgRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__0">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl04_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl04_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30669" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl04_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30669" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Waqas Ali</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl04_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl04_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl04_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl04_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30669" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl04_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30669" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgAltRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__1">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl06_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl06_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30668" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl06_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30668" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Asghar Ali</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl06_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl06_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl06_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl06_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30668" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl06_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30668" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__2">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl08_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl08_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30667" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl08_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30667" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Sajid Mehmood</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl08_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl08_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl08_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl08_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30667" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl08_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30667" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgAltRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__3">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl10_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl10_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30666" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl10_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30666" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Rana M sajid</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl10_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl10_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl10_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl10_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30666" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl10_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30666" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__4">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl12_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl12_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30665" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl12_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30665" style="font-size:14pt;font-weight:bold;text-decoration:underline;">M Ali Ijaz</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl12_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl12_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl12_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl12_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30665" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl12_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30665" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgAltRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__5">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl14_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl14_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30664" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl14_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30664" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Abbad Ali</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl14_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl14_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl14_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl14_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30664" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl14_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30664" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__6">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl16_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl16_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30663" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl16_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30663" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Sajid Latif</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl16_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl16_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl16_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl16_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30663" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl16_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30663" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgAltRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__7">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl18_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl18_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30662" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl18_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30662" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Shahid Imran</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl18_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl18_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl18_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl18_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30662" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl18_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30662" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__8">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl20_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl20_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30661" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl20_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30661" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Zaheer Abbas</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl20_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl20_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl20_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl20_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30661" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl20_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30661" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgAltRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__9">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl22_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl22_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30660" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl22_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30660" style="font-size:14pt;font-weight:bold;text-decoration:underline;">M Usman</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl22_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl22_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl22_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl22_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30660" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl22_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30660" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__10">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl24_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl24_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30659" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl24_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30659" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Waheed Ahmad</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl24_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl24_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl24_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl24_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30659" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl24_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30659" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgAltRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__11">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl26_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl26_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30658" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl26_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30658" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Fiaz Mehmood</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl26_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl26_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl26_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl26_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30658" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl26_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30658" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__12">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl28_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl28_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30657" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl28_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30657" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Iftekhar Ali</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl28_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl28_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl28_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl28_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30657" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl28_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30657" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgAltRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__13">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl30_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl30_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30656" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl30_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30656" style="font-size:14pt;font-weight:bold;text-decoration:underline;">M Tayyab</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl30_Label3" style="font-size:12pt;">Bus Helper</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl30_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl30_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl30_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30656" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl30_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30656" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr><tr class="rgRow" id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00__14">
+		<td style="width:20%;">
+                <table class="nav-justified">
+                    <tr style="text-align:center;">
+                        <td>
+                            <img id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl32_Image2" src="DefaultUserImage/noimage.jpg" style="width:105px;border-width:0px;" />
+                            <br />
+                            <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl32_HyperLink2" class="btn btn-danger" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30655" style="color:White;">Show Profile</a>
+                        </td>
+                    </tr>
+                </table>
+            </td><td>
+                <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl32_HyperLink2" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30655" style="font-size:14pt;font-weight:bold;text-decoration:underline;">Shahid latif</a>
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl32_Label3" style="font-size:12pt;">Mechanic</span>
+                ,
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl32_Label5" style="font-size:12pt;">Transport Office</span>
+                Department,
+                <br />
+                <span id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl32_Label6" style="font-size:12pt;">Sahiwal</span>
+                Campus<br />
+                <br />
+                
+                 <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl32_HyperLink1" class="button tiny " href="http://ww3.comsats.edu.pk/contact/default.aspx?D=30655" target="_blank" style="color:White;">Send Message</a>
+                
+                  <a id="ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl32_HyperLink3" class="button tiny success" href="http://ww3.comsats.edu.pk/faculty/FacultyDetails.aspx?Uid=30655" style="color:White;">View Profile</a>
+              
+                
+                
+           
+                <br />
+                
+                
+            </td>
+	</tr>
+	</tbody>
+
+</table><input id="ctl00_ContentPlaceHolder1_RadGrid1_ClientState" name="ctl00_ContentPlaceHolder1_RadGrid1_ClientState" type="hidden" />
+			</div>
+		
+    
+    
+    
+        
+	</div>
+</div>
+    
+    <div id="ctl00_ContentPlaceHolder1_RadAjaxLoadingPanel1" class="RadAjax RadAjax_Default" style="display:none;">
+	<div class="raDiv">
+		
+    
+	</div><div class="raColor raTransp">
+
+	</div>
+</div>
+    </div>
+
+                    </div>
+      </div></div></div>
+       <div class="off-canvas-wrap" data-offcanvas style="background:#151515">
+            <div class="inner-wrap">
+            <div class="row">
+                <div class="small-12 medium-12 large-12 columns text-center">
+                        <div class="small-12 medium-12 large-12 columns text-center" style="color:#c7c7c7; padding-top:2em; padding-bottom:2em;">
+                <div class="small-12 medium-6 large-6 columns text-right small-only-text-center" style="color:#c7c7c7">
+                    <h5 style="color: #fff;"><i class="fi-telephone" style="color: #0094ff"></i> Contact Us</h5>
+                    <strong style="color:#c7c7c7">Tel:</strong> +92-51-9247000-9247002 and 9049802<br />
+                    <strong style="color:#c7c7c7">UAN:</strong> +92-51-111-001-007
+    
+              </div>
+                             <div class="small-12 medium-6 large-6 columns text-left small-only-text-center" style="color:#c7c7c7">
+                                  <h5 style="color: #fff;"><i class="fi-map" style="color: #ff6a00;"></i> Reach Us at</h5>
+                    Park Road, Tarlai Kalan,<br />
+                    Islamabad 45550, Pakistan
+                             </div>
+                    </div>
+        
+                <div class="small-12 medium-12 large-12 columns text-center">
+                     <a class="button tiny" href="https://www.facebook.com/pages/Comsats-Institute-of-Information-Technology-Islamabad-Campus-Official/212244615476041" target="_blank"><i class="fi-social-facebook size-24"></i></a>
+                    <a class="button tiny success" href="https://twitter.com/#!/ciitislamabad" target="_blank"><i class="fi-social-twitter size-24"></i></a>
+                    <a class="button tiny info" href="http://ww3.comsats.edu.pk/ciitblogs" target="_blank"><i class="fi-social-blogger size-24"></i></a>
+                    <a class="button tiny alert" href="http://ww3.comsats.edu.pk/photogallery" target="_blank"><i class="fi-photo size-24"></i></a>
+                    <br />
+                    <br />
+                    
+                    <p><strong style="color: #eee;">Powered by:</strong> <a class="button tiny" href="http://ww3.comsats.edu.pk/itc">ITCentre</a></p>
+                </div>
+                </div>
+            
+            </div>
+        </div>
+           </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_skin":"MetroTouch","_text":"15","_uniqueId":"ctl00$ContentPlaceHolder1$RadGrid1$ctl00$ctl03$ctl01$PageSizeComboBox","_value":"15","clientStateFieldID":"ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_PageSizeComboBox_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"value":"10","attributes":{"ownerTableViewId":"ctl00_ContentPlaceHolder1_RadGrid1_ctl00"}},{"value":"15","selected":true,"attributes":{"ownerTableViewId":"ctl00_ContentPlaceHolder1_RadGrid1_ctl00"}},{"value":"20","attributes":{"ownerTableViewId":"ctl00_ContentPlaceHolder1_RadGrid1_ctl00"}},{"value":"50","attributes":{"ownerTableViewId":"ctl00_ContentPlaceHolder1_RadGrid1_ctl00"}}],"localization":"{\"AllItemsCheckedString\":\"All items checked\",\"ItemsCheckedString\":\"items checked\",\"CheckAllString\":\"Check All\"}","selectedIndex":1}, {"selectedIndexChanged":Telerik.Web.UI.Grid.ChangePageSizeComboHandler}, null, $get("ctl00_ContentPlaceHolder1_RadGrid1_ctl00_ctl03_ctl01_PageSizeComboBox"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_ContentPlaceHolder1_RadGrid1","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"AllowColumnsReorder":true,"ShouldCreateRows":true,"ReorderColumnsOnClient":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0,"AllowRowSelect":true,"EnableDragToSelectRows":true},"Scrolling":{},"Resizing":{},"ClientMessages":{},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37},"Animation":{}},"Skin":"MetroTouch","UniqueID":"ctl00$ContentPlaceHolder1$RadGrid1","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_editIndexes":"[]","_embeddedSkin":true,"_gridTableViewsData":"[{\"ClientID\":\"ctl00_ContentPlaceHolder1_RadGrid1_ctl00\",\"UniqueID\":\"ctl00$ContentPlaceHolder1$RadGrid1$ctl00\",\"PageSize\":15,\"PageCount\":142,\"EditMode\":\"EditForms\",\"AllowPaging\":true,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":false,\"AllowNaturalSort\":true,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"PagerAlwaysVisible\":false,\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"Designation\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"DataTypeName\":\"System.String\",\"DataField\":\"Designation\",\"Display\":true},{\"UniqueName\":\"Name\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"DataTypeName\":\"System.String\",\"DataField\":\"Name\",\"Display\":true}]}]","_masterClientID":"ctl00_ContentPlaceHolder1_RadGrid1_ctl00","_shouldFocusOnPage":false,"allowMultiRowSelection":false,"clientStateFieldID":"ctl00_ContentPlaceHolder1_RadGrid1_ClientState"}, null, null, $get("ctl00_ContentPlaceHolder1_RadGrid1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxPanel, {"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"enableAJAX":true,"enableHistory":false,"links":[],"loadingPanelID":"ctl00_ContentPlaceHolder1_RadAjaxLoadingPanel1","styles":[],"uniqueID":"ctl00$ContentPlaceHolder1$ctl00"}, null, null, $get("ctl00_ContentPlaceHolder1_ctl00"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"skin":"Default","transparency":0,"uniqueID":"ctl00$ContentPlaceHolder1$RadAjaxLoadingPanel1","zIndex":90000}, null, null, $get("ctl00_ContentPlaceHolder1_RadAjaxLoadingPanel1"));
+});
+//]]>
+</script>
+</form>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+  <script>
+      $(document).foundation();
+  </script>
+    <script src="js/modernizr.custom.js"></script>
+   
+    <script src="js/jquery.cbpFWSlider.min.js"></script>
+		<script>
+		    //$(function () {
+
+		    //    $('#cbp-fwslider').cbpFWSlider();
+
+		    //});
+		    $('document').ready(function () {
+		        // init slider
+		        $('#cbp-fwslider').cbpFWSlider();
+
+		        /**
+                      Set a 3 seconds interval
+                      if next button is visible (so is not the last slide)  click next button
+                      else it finds first dot and click it to start from the 1st slide
+                 **/
+		        setInterval(function () {
+		            if ($('.cbp-fwnext').is(":visible")) {
+		                $('.cbp-fwnext').click();
+
+
+		            }
+		            else {
+		                $('.cbp-fwdots').find('span').click();
+		            }
+		        }, 7000);
+		    });
+		</script>
+
+ <script type="text/javascript" src="js/jquery/jquery.widget.min.js"></script>
+  <script type="text/javascript" src="js/prettify/prettify.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/jquery.mCustomScrollbar.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $(window).load(function () {
+                $(".content_news").mCustomScrollbar({
+                    scrollButtons: {
+                        theme: "dark",
+                        enable: true
+                    }
+                });
+                $(".content_events").mCustomScrollbar({
+                    scrollButtons: {
+                        theme: "dark",
+                        enable: true
+                    }
+                });
+
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>
